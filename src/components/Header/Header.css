@@ -1,0 +1,34 @@
+header {
+    background-color: #4A90E2;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.white {
+    color: white;
+}
+
+img {
+    width: 17vh;
+    margin-left: 2vh;
+}
+
+h2 {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+#profile-picture {
+    font-size: 6vh;
+    padding: 1vh;
+}
+
+.container-profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 3vh;
+}
