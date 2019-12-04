@@ -29,19 +29,19 @@ export default function PostList() {
         {
             id: 2,
             author: {
-                name: "Rafael Bambu",
+                name: "Rafa Moreira",
                 avatar: "http://url-da-imagem.com/imagem.jpg"
             },
             date: "10 Jun 2019",
-            content: "Alguém sabe onde têm algum traveco do bom?",
+            content: "Alguém sabe onde tem seda?",
             comments: [
                 {
                     // id: 1,
                     author: {
-                        name: "Kuririm de Alcântara",
+                        name: "Kuririm",
                         avatar: "http://url-da-imagem.com/imagem.jpg"
                     },
-                    content: "Tem lá no Bob Esponja de Orlândia tem muitos anjinhos"
+                    content: "Lá no 13º DP tem... rsrsrs"
                 }
             ]
         },
@@ -52,15 +52,15 @@ export default function PostList() {
                 avatar: "http://url-da-imagem.com/imagem.jpg"
             },
             date: "04 Jun 2019",
-            content: "Quando que começa as férias da Fatec?",
+            content: "Quando que acaba as aulas da Fatec?",
             comments: [
                 {
                     // id: 1,
                     author: {
-                        name: "Juninho Tiozão",
+                        name: "Juninho",
                         avatar: "http://url-da-imagem.com/imagem.jpg"
                     },
-                    content: "Quando terminar as aulas HAHSUHAUHSUA 'eu sou zueirãum'"
+                    content: "Dia 10/07. Exceto para mim que to de DP kkk"
                 }
             ]
         },
@@ -71,15 +71,15 @@ export default function PostList() {
                 avatar: "http://url-da-imagem.com/imagem.jpg"
             },
             date: "04 Jun 2019",
-            content: "Alguém aqui sabe que dia o Roland vai postar as notas?",
+            content: "Alguém aqui sabe que dia o Senhor Miyagi vai postar as notas?",
             comments: [
                 {
                     // id: 1,
                     author: {
-                        name: "Cuca Beludo",
+                        name: "Cuca B.",
                         avatar: "http://url-da-imagem.com/imagem.jpg"
                     },
-                    content: "Relaxa! Roland dá 8 para geral só para não te ver de novo"
+                    content: "Relaxa! Ele dá 8 para geral só para não te ver de novo"
                 }
             ]
         },
@@ -97,6 +97,8 @@ export default function PostList() {
                         content={item.content}
                         author={item.author.name}
                         key={item.id}
+                        authorComments={item.comments[0].author.name}
+                        contentComments={item.comments[0].content}
                     />
                 ))
                 }
